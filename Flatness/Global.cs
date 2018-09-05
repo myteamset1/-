@@ -13,7 +13,7 @@ namespace Flatness
 {
    public  class Global
     {
-        public static string ParamsPath = Application.StartupPath + "\\Parms\\";
+        public static string ParamsPath = Application.StartupPath + "\\Parms\\";  //板卡配置文件路径
         public static string UserParmsPath = ParamsPath + "UserParms.xml";
         public static string MontionParmsPath = ParamsPath + "MontionParms.xml";
         public static string CalibrationParmsPath = ParamsPath + "Calibration.xml";
