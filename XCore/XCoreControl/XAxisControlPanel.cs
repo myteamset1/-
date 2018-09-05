@@ -14,7 +14,7 @@ namespace XCore
 {
     public partial class XAxisControlPanel : UserControl
     {
-        private int taskId ;
+        private int taskId;
         private int m_AxisId;
         private XAxis m_Axis;
         private double m_Distance;
@@ -26,11 +26,7 @@ namespace XCore
             get { return taskId; }
             set
             {
-                cmbAxisId.Items.Clear();
-                foreach (var axis in XTaskManage.Instance.FindTaskById(taskId).AxisMap.Values)
-                {
-                    cmbAxisId.Items.Add(axis.Name);
-                }
+                taskId = value;
             }
         }
         public void AddAxisItem(string name)
@@ -50,6 +46,15 @@ namespace XCore
             InitailVel();
             InitailSts();
             //lblSpeed.BringToFront();
+        }
+
+        private void InitailSts1()
+        {
+            cmbAxisId.Items.Clear();
+            foreach (var axis in XTaskManage.Instance.FindTaskById(TaskId).AxisMap.Values)
+            {
+                cmbAxisId.Items.Add(axis.Name);
+            }
         }
 
         private void InitailDistance()
