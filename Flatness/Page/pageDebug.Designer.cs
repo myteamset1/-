@@ -45,7 +45,6 @@
             this.测量模块 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.xAxisControlPanel = new XCore.XAxisControlPanel();
             this.tabControl_Debug = new System.Windows.Forms.TabControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
@@ -232,7 +231,7 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.xAxisControlPanel);
+
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Name = "tabPage7";
@@ -242,13 +241,6 @@
             this.tabPage7.Text = "测量模块";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // xAxisControlPanel
-            // 
-            this.xAxisControlPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.xAxisControlPanel.Location = new System.Drawing.Point(537, 3);
-            this.xAxisControlPanel.Name = "xAxisControlPanel";
-            this.xAxisControlPanel.Size = new System.Drawing.Size(543, 287);
-            this.xAxisControlPanel.TabIndex = 0;
             // 
             // tabControl_Debug
             // 
