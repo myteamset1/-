@@ -23,7 +23,7 @@ namespace Page
         pageLogin,
         pageEngineer,
         pageGRR
-    }
+    }//123
     public delegate void ChangePage(string pageName);
     public partial class Main : Form
     {
