@@ -404,7 +404,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XCore\XCore.csproj">
-      <Project>{276efff4-ba5e-4a48-8fc7-b3d7d0ac1999}</Project>
+      <Project>{017103d9-2d61-4d7a-95db-739c523ff470}</Project>
       <Name>XCore</Name>
     </ProjectReference>
   </ItemGroup>

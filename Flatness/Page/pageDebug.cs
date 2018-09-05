@@ -68,6 +68,10 @@ namespace Page
             switch (s)
             {
                 case "测量模块":
+                    //XAxis x1 = XDevice.Instance.FindAxisById((int)AxisId.测量X1);
+                    //XAxis x2 = XDevice.Instance.FindAxisById((int)AxisId.测量Z1);
+                    //xAxisControlPanel.AddAxisItem(AxisId.测量X1.ToString());
+                    //xAxisControlPanel.AddAxisItem(AxisId.测量Z1.ToString());
                     xAxisControlPanel.TaskId = 0;
                     return;
                 case "夹持模块":

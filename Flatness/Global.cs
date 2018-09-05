@@ -13,7 +13,7 @@ namespace Flatness
 {
    public  class Global
     {
-        public static string ParamsPath = Application.StartupPath + "\\Parms\\";  //板卡配置文件路径
+        public static string ParamsPath = Application.StartupPath + "\\Parms\\";
         public static string UserParmsPath = ParamsPath + "UserParms.xml";
         public static string MontionParmsPath = ParamsPath + "MontionParms.xml";
         public static string CalibrationParmsPath = ParamsPath + "Calibration.xml";
@@ -22,7 +22,7 @@ namespace Flatness
         public static UserParams UserParm = new UserParams();
         public static MotionParams MotionParam = new MotionParams();
         public static CalibrationParams CalibrationParam = new CalibrationParams();
-        public static void BindParms()         //加载参数方法1
+        public static void BindParms()
         {        
             ParmsFactory.Load<UserParams>(UserParmsPath,ref UserParm);
             ParmsFactory.Load<MotionParams>(MontionParmsPath, ref MotionParam);
@@ -56,7 +56,7 @@ namespace Flatness
             XDevice.Instance.BingDo((int)CardId.AMP208C1, (int)DoId.蜂鸣器, 11, 0, DoId.蜂鸣器.ToString(), CardId.AMP208C1.ToString());
             XDevice.Instance.BingDo((int)CardId.AMP208C1, (int)DoId.黄灯, 12, 0, DoId.黄灯.ToString(), CardId.AMP208C1.ToString());
         }
-        public static void BindTask()            //
+        public static void BindTask()
         {
             XTaskManage.Instance.BindTask((int)TaskId.任务0_测量模块, new 测量模块(), TaskId.任务0_测量模块.ToString());
             XTaskManage.Instance.BindTask((int)TaskId.任务1_支撑模块, new 测量模块(), TaskId.任务1_支撑模块.ToString());

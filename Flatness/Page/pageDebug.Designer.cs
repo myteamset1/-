@@ -49,8 +49,6 @@
             this.tabControl_Debug = new System.Windows.Forms.TabControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.xAxisControlPanel1 = new XCore.XAxisControlPanel();
-            this.xAxisControlPanel2 = new XCore.XAxisControlPanel();
             this.输出信号.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrDo)).BeginInit();
@@ -59,10 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgrDi)).BeginInit();
             this.支撑模块.SuspendLayout();
             this.tabControl3.SuspendLayout();
-            this.tabPage9.SuspendLayout();
             this.夹持模块.SuspendLayout();
             this.tabControl2.SuspendLayout();
-            this.tabPage8.SuspendLayout();
             this.测量模块.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -170,7 +166,6 @@
             // 
             // tabPage9
             // 
-            this.tabPage9.Controls.Add(this.xAxisControlPanel2);
             this.tabPage9.Location = new System.Drawing.Point(4, 25);
             this.tabPage9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage9.Name = "tabPage9";
@@ -204,7 +199,6 @@
             // 
             // tabPage8
             // 
-            this.tabPage8.Controls.Add(this.xAxisControlPanel1);
             this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage8.Name = "tabPage8";
@@ -252,11 +246,9 @@
             // 
             this.xAxisControlPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.xAxisControlPanel.Location = new System.Drawing.Point(537, 3);
-            this.xAxisControlPanel.M_ACC = 1000D;
             this.xAxisControlPanel.Name = "xAxisControlPanel";
             this.xAxisControlPanel.Size = new System.Drawing.Size(543, 287);
             this.xAxisControlPanel.TabIndex = 0;
-            this.xAxisControlPanel.TaskId = 0;
             // 
             // tabControl_Debug
             // 
@@ -283,26 +275,6 @@
             this.timer2.Interval = 200;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // xAxisControlPanel1
-            // 
-            this.xAxisControlPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.xAxisControlPanel1.Location = new System.Drawing.Point(410, 43);
-            this.xAxisControlPanel1.M_ACC = 1000D;
-            this.xAxisControlPanel1.Name = "xAxisControlPanel1";
-            this.xAxisControlPanel1.Size = new System.Drawing.Size(537, 267);
-            this.xAxisControlPanel1.TabIndex = 0;
-            this.xAxisControlPanel1.TaskId = 0;
-            // 
-            // xAxisControlPanel2
-            // 
-            this.xAxisControlPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.xAxisControlPanel2.Location = new System.Drawing.Point(539, 5);
-            this.xAxisControlPanel2.M_ACC = 1000D;
-            this.xAxisControlPanel2.Name = "xAxisControlPanel2";
-            this.xAxisControlPanel2.Size = new System.Drawing.Size(537, 267);
-            this.xAxisControlPanel2.TabIndex = 0;
-            this.xAxisControlPanel2.TaskId = 0;
-            // 
             // pageDebug
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -321,10 +293,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgrDi)).EndInit();
             this.支撑模块.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
-            this.tabPage9.ResumeLayout(false);
             this.夹持模块.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
             this.测量模块.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
@@ -355,7 +325,5 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private XCore.XAxisControlPanel xAxisControlPanel;
-        private XCore.XAxisControlPanel xAxisControlPanel2;
-        private XCore.XAxisControlPanel xAxisControlPanel1;
     }
 }
