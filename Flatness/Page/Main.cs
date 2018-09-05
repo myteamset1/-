@@ -24,6 +24,7 @@ namespace Page
         pageEngineer,
         pageGRR
     }
+    //ddjjj
     public delegate void ChangePage(string pageName);
     public partial class Main : Form
     {
